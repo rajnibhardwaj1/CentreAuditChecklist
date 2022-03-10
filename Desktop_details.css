@@ -216,3 +216,14 @@ a.article, a.article:hover {
     }
 
 }
+
+#form{
+    
+padding-left: 5%;
+}
+
+#heading{
+    padding-left: 5%;
+    font-family: Roboto Slab;
+    color: blue;
+}
