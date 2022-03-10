@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="css/desktop_details.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -119,7 +119,8 @@
                 </div>
             </nav>
 
-            <form>
+            <h2 id="heading">Desktop Details</h2><hr>
+            <form id="form">
                 <div class="form-row">
 
                     <div class="form-group col-md-4">
@@ -153,15 +154,16 @@
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Minimum Hardisk Space</label>
                         <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Min Hardisk Space">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Min Hardisk Space">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputState">Type of Monitor</label>
                         <select id="monitortype" class="form-control">
-                            <option selected>TFT</option>
+                            <option selected>choose</option>
                             <option>CRT</option>
                             <option>15th</option>
                             <option>17th</option>
+                            <option>TFT</option>
 
                         </select>
                     </div>
@@ -170,10 +172,11 @@
                     <div class="form-group col-md-6">
                         <label for="inputState">Operating System</label>
                         <select id="monitortype" class="form-control">
-                            <option selected>Windows</option>
+                            <option selected>choose</option>
                             <option>XP</option>
                             <option>2003</option>
                             <option>Linux</option>
+                            <option>windows</option>
 
                         </select>
                     </div>
@@ -181,12 +184,85 @@
 
                         <label for="inputState">IE Version</label>
                         <select id="monitortype" class="form-control">
-                            <option selected>6</option>
+                            <option selected>choose</option>
+                            <option>6</option>
                             <option>7</option>
                             <option>8</option>
                             <option>NO</option>
 
                         </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">License OS in all Client node</label>
+                        <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
+                        <input type="text" class="form-control" id="Licece" placeholder="License OS in all Client node">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Name of Antivirus installed on PC's</label>
+                        <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
+                        <input type="text" class="form-control" id="Antivirus" placeholder="Name of Antivirus installed on PC's">
+                    </div>
+                </div>
+                 <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Branded Machines</label>
+                        <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="brand" id="flexRadioDefault1">
+                            <label class="form-check-label" >
+                                yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="brand" id="brand">
+                            <label class="form-check-label">No </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">.Net Framework 4.0 or higher installed</label>
+                        <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="framework" id="ramework">
+                            <label class="form-check-label" >
+                                yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="framework" id="framework">
+                            <label class="form-check-label">No </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">College has Thin client</label>
+                        <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="client" id="client">
+                            <label class="form-check-label" >
+                                yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="client" id="client">
+                            <label class="form-check-label">No </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">6 feet head to head distance.Count </label>
+                        <!-- <input class="input" class="form-control" placeholder="Please Enter Text" type="text" >  <span class="underline"></span> -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="count" id="count">
+                            <label class="form-check-label" >
+                                yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="count" id="count">
+                            <label class="form-check-label">No </label>
+                        </div>
                     </div>
                 </div>
             </form>
