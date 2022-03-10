@@ -10,7 +10,7 @@ let configInput = document.querySelector('#config');
 btnAdd.addEventListener('click', () => {
     let lab = labInput.value;
     let system = systemInput.value;
-    let configuration = configInput.value;
+    let config = configInput.value;
 
     let template = `
                 <tr>
