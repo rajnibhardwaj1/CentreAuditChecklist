@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel="stylesheet" type="text/css" href="adminform.css">  
+</head>
+<body>
+ <div class="popup" id="popup-1">
+   <div class="content">
+    <div class="close-btn" onclick="togglePopup()">
+     ×</div><br>
+  <div class="input-field">
+      <input type="text" placeholder="Employee ID" class="validate" id="required">
+       </div>
+  <div class="input-field">
+      <input  type="text" placeholder="Employee First Name" class="validate" id="required">
+       </div>
+       <div class="input-field">
+      <input type="text" placeholder="Employee Last Name" class="validate" id="required">
+       </div>
+  <div class="input-field">
+      <input  type="number" placeholder="Employee conntact" class="validate" id="required">
+       </div>
+       <div class="input-field">
+      <input type="password" placeholder="Password" class="validate">
+       </div>
+  <div class="input-field">
+      <input  type="text" placeholder="Employee Base Location" class="validate" id="required">
+       </div>
+       <div class="input-field">
+      <input  type="text" placeholder="Employee Report-To" class="validate" id="required">
+       </div>
+    <a href="admin.html"><button class="second-button">Submit</button></a>
+   </div>
+  </div>
+  <button onclick="togglePopup()" class="first-button">Sign In</button>
+<script>
+ function togglePopup() {
+ document.getElementById("popup-1")
+  .classList.toggle("active");
+}
+</script>
+
+</body>
+</html> 
