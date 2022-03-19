@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Sidebar Menu</title> -->
+    <link rel="stylesheet" href="style3.css">
+      <link rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="adminform.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    
+      <nav class="navbar">
+        <div class="brand-title">Game Changer</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li onclick="togglePopup()" ><a>Add Employee</a></li>
+          </ul>
+        </div>
+      </nav>
+      <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>My Menu</header>
+      <a href="#" class="active">
+        <i class="fas fa-qrcode"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="#">
+        <i class="fas fa-link"></i>
+        <span>Shortcuts</span>
+      </a>
+      <a href="#">
+        <i class="fas fa-stream"></i>
+        <span>Overview</span>
+      </a>
+      <a href="#">
+         <i class="fas fa-calendar"></i>
+        <span>Events</span>
+      </a>
+      <a href="#">
+        <i class="far fa-question-circle"></i>
+        <span>About</span>
+      </a>
+      <a href="#">
+        <i class="fas fa-sliders-h"></i>
+        <span>Services</span>
+      </a>
+      <a href="#">
+        <i class="far fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+      <div>
+    <div class="popup" id="popup-1">
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">
+        ×</div><br>
+      <div class="input-field">
+         <input type="text" placeholder="Employee ID" class="validate" required> 
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee First Name" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee Last Name" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="number" placeholder="Employee contact" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee Base Location" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee Report-To" class="validate" required>
+      </div>
+      <button onclick="required ()" class="second-button">Submit</button>
+    </div>
+  </div>
+<!--  <button onclick="togglePopup()" class="first-button">Sign In</button>-->
+  <script>
+    function togglePopup() {
+      document.getElementById("popup-1")
+        .classList.toggle("active");
+    }
+  </script>
+      </div>
+      
+</body>
+</html>
