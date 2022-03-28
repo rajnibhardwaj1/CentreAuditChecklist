@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script tutorial</title>
+</head>
+
+<body onload="checkos()">
+    <h2>My first java script</h2>
+    <!-- <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click for Current Date and Time</button> 
+    <p id="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit placeat dolorum aut optio assumenda laborum quia ducimus. Fugiat facilis, est aliquid cupiditate, eaque veritatis porro iusto dignissimos hic amet esse necessitatibus odit laboriosam asperiores.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML="The Champ is here"'>Java</button>; -->
+
+    <!-- <p id="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit placeat dolorum aut optio assumenda laborum quia ducimus. Fugiat facilis, est aliquid cupiditate, eaque veritatis porro iusto dignissimos hic amet esse necessitatibus odit laboriosam asperiores.</p>
+    <button type="button" onclick='document.getElementById("demo").style.fontSize="34px"'>Click for Change Font</button>; -->
+
+    <!-- <div class="textboxes">
+        <form>
+            <div>
+                <lable for="Serverroom">Operating system</lable>
+                <input type="radio" id="yes" name="Serverroom" value="yes" onclick="showtextbox()">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="Serverroom" value="no" onclick="hidetextbox()">
+                <label for="no">No</label><br>
+
+            </div>
+            <div id="ifno">
+                <input type="text" id="KVA" name="KVA" placeholder="KVA">
+                <input type="text" id="duraion" name="duraion" placeholder="Backup Duration">
+            </div>
+        </form>
+    </div> -->
+    <!-- <lable for="Serverroom">Operating system</lable>
+                <input type="radio" id="Windows" name="Serverroom" value="Windows" onclick="forwindows()">
+                <label for="Windows">Windows</label>
+                <input type="radio" id="Linux" name="Serverroom" value="Linux" onclick="forlinux()">
+                <label for="Linux">Linux</label><br> -->
+    <label for="OperatingSystem">Operating system on desktops</label>
+    <select id="OperatingSystem" name="OperatingSystem" onchange="checkos();">
+        <option value="Select" selected>Select</option>
+        <option value="WindowsOS">Windows</option>
+        <option value="LinuxOS">Linux</option>
+    </select><br>
+    <div id=Win-version>
+        <label for="windows">Windows Version</label>
+
+        <select name="windows">
+            <option value="windows-7">Windows-7</option>
+            <option value="windows-8">windows-8</option>
+            <option value="windows-10">windows-10</option>
+            <option value="windows-11">windows-11</option>
+        </select><br>
+    </div>
+    <div id=Linux-version>
+        <label for="Linux">Linux Distributor</label>
+
+        <select name="Linux">
+            <option value="Red-hat">Red-hat</option>
+            <option value="ubuntu">Ubuntu</option>
+            <option value="centos">CentOS</option>
+            <option value="fedora">Fedora</option>
+        </select><br>
+    </div>
+    <!-- <button type="button" onclick="document.getElementById('ifno').style.display='none'">Hide text Box</button> -->
+    -->
+    <script>
+        // function hidetextbox() {
+        //     document.getElementById('ifno').style.display = 'none';
+        // }
+        // function showtextbox() {
+        //     document.getElementById('ifno').style.display = 'block';
+        // }
+        // function forwindows()
+        // {
+        //     document.getElementById('Win-version').style.display='block';
+        //     document.getElementById('Linux-version').style.display='none'
+        // }
+        // function forlinux()
+        // {
+        //     document.getElementById('Win-version').style.display='none';
+        //     document.getElementById('Linux-version').style.display='block'
+        // }
+        function checkos(){
+            var ostype=document.getElementById("OperatingSystem").value;
+            if (ostype==="WindowsOS") {
+                
+                    document.getElementById('Win-version').style.display = 'block';
+                    document.getElementById('Linux-version').style.display = 'none';
+                    
+                    
+                }
+                else if(ostype==="Select" ){
+                    
+                    document.getElementById('Win-version').style.display = 'none';
+                    document.getElementById('Linux-version').style.display = 'none';
+
+            }
+            else {
+               
+                    document.getElementById('Win-version').style.display = 'none';
+                    document.getElementById('Linux-version').style.display = 'block';
+                
+
+            }
+
+        }
+       
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
