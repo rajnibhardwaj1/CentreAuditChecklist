@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Credintials</title>
+    <link rel="stylesheet" type="text/css" href="thank_you.css"
+</head>
+<body>
+    <div class="popup center" style="width: 500px;">
+        <div class="icon">
+          <i class="fa fa-ban" style="color:red;"></i>
+        </div>
+        <div class="title">
+          PLEASE ENTER THE LOGIN CREDINTIALS!!!
+        </div>
+        <div class="dismiss-btn">
+          <button id="dismiss-popup-btn">
+            Dismiss
+          </button>
+        </div>
+      </div>
+      <div class="bottom-right">
+        <button id="open-popup-btn">
+          Open Popup
+        </button>
+      </div>
+</body>
+<script>
+    document.getElementById("open-popup-btn").addEventListener("click",function(){
+        document.getElementById("open-popup-btn").style.display = "none";
+        document.getElementsByClassName("popup")[0].classList.add("active");
+      });
+       
+      document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+        document.getElementById("open-popup-btn").style.display = "block";
+        document.getElementsByClassName("popup")[0].classList.remove("active");
+      });
+</script>
+</html>
