@@ -25,9 +25,8 @@ $total=mysqli_num_rows($result1);
                 visibility:visible;
          }
      } */
-     <style>
         .printing{
-                font-size: 20px;
+            font-size: 20px;
                 width: 600px;
                 margin-left:30vh;
                 font-family:'Times New Roman', Times, serif;
@@ -37,14 +36,22 @@ $total=mysqli_num_rows($result1);
                 /*border: 2px solid blue;*/
                 display: inline-block;
             }
-            h4{
+            .print-container h4{
                 width: 300px;
                 /*border: 2px solid red;*/
                 font-size:22px;
                 display: inline;
                 color: gray;
                 }
-    </style>
+                .print-container h1{
+                    text-align:center;
+                     background:red;
+                     border-radius:10px 10px 10px 10px;
+                    }
+                .print-container h1:hover {
+                     background-color: yellow;
+                    }
+    
  </style>  
  <body>  
   <!-- <div class="container">  
@@ -168,98 +175,98 @@ $total=mysqli_num_rows($result1);
 <h3>How many Computer labs are allocated for Exam?:<h4><?php echo $centre_data['computer_labs']; ?> </h4></h3><br>
 <h3>On which floors Computer LABS are located?:<h4><?php echo $centre_data['floors']; ?></h4> </h3><br>
 
-<h3>PH Friendly Centre (Y/N):<?php echo $centre_data['PH_friendly']; ?> <h3><br>
-<h3>Lift Availability (Y/N) :<?php echo $centre_data['lift_availability']; ?> <h3><br>
-<h3>Adequate space for candidate waiting area ?:<?php echo $centre_data['waiting_space']; ?> <h3><br>
-<h3>Adequate space for Queuing up candidate?:<?php echo $centre_data['queuing_space']; ?> <h3><br>
+<h3>PH Friendly Centre (Y/N):<h4><?php echo $centre_data['PH_friendly']; ?> </h4> </h3><br>
+<h3>Lift Availability (Y/N) :<h4><?php echo $centre_data['lift_availability']; ?> </h4> </h3><br>
+<h3>Adequate space for candidate waiting area ?:<h4><?php echo $centre_data['waiting_space']; ?> </h4> </h3><br>
+<h3>Adequate space for Queuing up candidate?:<h4><?php echo $centre_data['queuing_space']; ?> </h4> </h3><br>
 
-<h3>Candidate screening facility?:<?php echo $centre_data['screening_facility']; ?> <h3><br>
-<h3>Place for Registration Desk with LAN, POWER & Sufficient Light?:<?php echo $centre_data['regis_desk']; ?> <h3><br>
-<h3>Secure Server Room Availability (Y/N):<?php echo $centre_data['server_room']; ?> <h3><br>
-<h3>Are all the Labs in one Building or Different Building:<?php echo $centre_data['building']; ?> <h3><br>
-<h3>If they are Different Building are they using same subnet mask:<?php echo $centre_data['samesubnetmask']; ?> <h3><br>
-<h3>IF Different then distance between them(meter)?:<?php echo $centre_data['distance_bw']; ?> <h3><br>
-<h3>Does the TC belongs to Covid 19 Hotspot areas?:<?php echo $centre_data['covid_hotspot']; ?> <h3><br>
-<h3>If Yes than is the TC Sanitized?:<?php echo $centre_data['TC_sanitized']; ?> <h3><br>
-<h3>Does any of the center staff has the history of Covid 19 Positive?:<?php echo $centre_data['anystaff_covid_history']; ?> <h3><br>
-<h3>Does each floor has Wash basins along with Soap available for hand wash?:<?php echo $centre_data['washbasins']; ?> <h3><br>
+<h3>Candidate screening facility?:<h4><?php echo $centre_data['screening_facility']; ?> </h4> </h3><br>
+<h3>Place for Registration Desk with LAN, POWER & Sufficient Light?:<h4><?php echo $centre_data['regis_desk']; ?> </h4> </h3><br>
+<h3>Secure Server Room Availability (Y/N):<h4><?php echo $centre_data['server_room']; ?> </h4> </h3><br>
+<h3>Are all the Labs in one Building or Different Building:<h4><?php echo $centre_data['building']; ?> </h4> </h3><br>
+<h3>If they are Different Building are they using same subnet mask:<h4><?php echo $centre_data['samesubnetmask']; ?> </h4> </h3><br>
+<h3>IF Different then distance between them(meter)?:<h4><?php echo $centre_data['distance_bw']; ?> </h4> </h3><br>
+<h3>Does the TC belongs to Covid 19 Hotspot areas?:<h4><?php echo $centre_data['covid_hotspot']; ?> </h4> </h3><br>
+<h3>If Yes than is the TC Sanitized?:<h4><?php echo $centre_data['TC_sanitized']; ?> </h4> </h3><br>
+<h3>Does any of the center staff has the history of Covid 19 Positive?:<h4><?php echo $centre_data['anystaff_covid_history']; ?> </h4> </h3><br>
+<h3>Does each floor has Wash basins along with Soap available for hand wash?:<h4><?php echo $centre_data['washbasins']; ?> </h4> </h3><br>
 </div>
 <hr>
 
 
  <!-- Desktop  detailsss------------------------------------------------------ -->
-<div id="desktop">
+<div id="desktop" class="print-container">
     <h1>Desktop Details</h1>
- <h3>Candidate screening facility?:<?php echo $centre_data['des_config']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['ram_avail']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['disk_space']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['monitor_type']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['os_name']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['os_version']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['ie_version']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['os_license']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['antivirus_name']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['Branded_machine']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['dotnet_install']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['distance_norms']; ?> <h3>
- <h3>Candidate screening facility?:<?php echo $centre_data['thin_client']; ?> <h3>
+ <h3>Candidate screening facility?:<?php echo $centre_data['des_config']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['ram_avail']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['disk_space']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['monitor_type']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['os_name']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['os_version']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['ie_version']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['os_license']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['antivirus_name']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['Branded_machine']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['dotnet_install']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['distance_norms']; ?> </h4> </h3><br>
+ <h3>Candidate screening facility?:<?php echo $centre_data['thin_client']; ?> </h4> </h3><br>
 </div>
 <hr>
-<div id="powerbackup">
+<div id="powerbackup" class="print-container">
     <h1>Power Backup</h1>
-    <h3>Candidate screening facility?:<?php echo $centre_data['UPS_availability']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['typeof_UPS']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['UPS_capacity']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['labsconnected_UPS']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['UPS_backup_time']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['avail_diesel_genset']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['genset_capacity']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['labsconnected_genset']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['switchover']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['avail_backup_dg']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['dg_capacity']; ?> <h3>
+    <h3>Candidate screening facility?:<?php echo $centre_data['UPS_availability']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['typeof_UPS']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['UPS_capacity']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['labsconnected_UPS']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['UPS_backup_time']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['avail_diesel_genset']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['genset_capacity']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['labsconnected_genset']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['switchover']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['avail_backup_dg']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['dg_capacity']; ?> </h4> </h3><br>
 </div>
 <hr>
-<div id="internetline">
+<div id="internetline" class="print-container">
     <h1>Internet Line</h1>
-    <h3>Candidate screening facility?:<?php echo $centre_data['internet']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['connection_type']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['service_provider']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['internet_bandwidth']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['for_IBT']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['clg_bandwidth']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['backup_net']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['b_connection_type']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['b_service_provider']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['b_internet_bandwidth']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['b_for_IBT']; ?> <h3>
+    <h3>Candidate screening facility?:<?php echo $centre_data['internet']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['connection_type']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['service_provider']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['internet_bandwidth']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['for_IBT']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['clg_bandwidth']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['backup_net']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['b_connection_type']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['b_service_provider']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['b_internet_bandwidth']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['b_for_IBT']; ?> </h4> </h3><br>
 </div>
 <hr>
-<div id="networkdetails">
+<div id="networkdetails" class="print-container">
     <h1>Network Details</h1>
-    <h3>Candidate screening facility?:<?php echo $centre_data['network_topology']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['type_network']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['cabling_structure']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['isolated_network']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['proxy_config']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['power_backup']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['type_structured_network']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['LAN']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['clg_network']; ?> <h3>
+    <h3>Candidate screening facility?:<?php echo $centre_data['network_topology']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['type_network']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['cabling_structure']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['isolated_network']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['proxy_config']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['power_backup']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['type_structured_network']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['LAN']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['clg_network']; ?> </h4> </h3><br>
 </div>
 <hr>
-<div id="otherinfo">
+<div id="otherinfo" class="print-container">
     <h1>Other Information</h1>
-    <h3>Candidate screening facility?:<?php echo $centre_data['wifi']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['num_system_wifi']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['printers']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['type_printer']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['ac_avail']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['cctv_avail']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['drinking_water']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['has_bell']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['sep_frisking_area']; ?> <h3>
-    <h3>Candidate screening facility?:<?php echo $centre_data['thermal_guns']; ?> <h3>
+    <h3>Candidate screening facility?:<?php echo $centre_data['wifi']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['num_system_wifi']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['printers']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['type_printer']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['ac_avail']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['cctv_avail']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['drinking_water']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['has_bell']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['sep_frisking_area']; ?> </h4> </h3><br>
+    <h3>Candidate screening facility?:<?php echo $centre_data['thermal_guns']; ?> </h4> </h3><br>
 </div>   
 <hr>
 </div>  
